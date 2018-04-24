@@ -1,0 +1,60 @@
+* {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004) !important; //overflow-x: hidden;
+}
+
+/* fonts */
+@import 'fonts';
+
+/* core */
+@import 'variables';
+@import 'mixins';
+
+/* styleguide */
+@import 'styleguide';
+
+/* section */
+@import 'header';
+@import 'footer';
+
+/* overrides */
+@import 'overrides';
+
+
+
+section {
+    padding: rem-calc(60 0);
+}
+
+#root {
+    max-width : 1200px;
+    padding : 15px;
+    width : 100%;
+    margin : auto;
+
+    @media only screen and (max-width: 768px) {
+        width : 100%;
+    }
+}
+
+.textField {
+    width : auto;
+}
+
+.button {
+    margin : 15px 0;
+}
+
+h1 {
+    padding : 15px 0 30px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+h2 {
+    padding : 10px 0;
+}

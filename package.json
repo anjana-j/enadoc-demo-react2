@@ -1,0 +1,74 @@
+{
+    "name": "react-package",
+    "version": "1.0.0",
+    "description": "React",
+    "main": "app.js",
+    "scripts": {
+        "start": "npm run clean && npm run dev",
+        "test": "mocha",
+        "dev": "webpack-dev-server --mode development --compress --progress --color",
+        "prod": "npm run clean && webpack --mode=production",
+        "clean": "rimraf ./dist/*"
+    },
+    "author": "Anjana J",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "babel": {
+        "presets": [
+            "env",
+            "react",
+            "stage-2"
+        ]
+    },
+    "devDependencies": {
+        "ajv": "^6.4.0",
+        "autoprefixer": "^8.2.0",
+        "babel": "^6.23.0",
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-eslint": "^8.2.3",
+        "babel-loader": "^7.1.4",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-react": "^6.24.1",
+        "babel-preset-stage-2": "^6.24.1",
+        "babel-preset-stage-3": "^6.24.1",
+        "browser-sync": "^2.23.6",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "css-loader": "^0.28.11",
+        "exports-loader": "^0.7.0",
+        "expose-loader": "^0.7.5",
+        "fast-sass-loader": "^1.4.1",
+        "file-loader": "^1.1.11",
+        "fs-extra": "^5.0.0",
+        "ganache-cli": "^6.1.0",
+        "html-loader": "^0.5.5",
+        "html-webpack-plugin": "^3.1.0",
+        "imports-loader": "^0.8.0",
+        "mini-css-extract-plugin": "^0.2.0",
+        "mocha": "^5.0.5",
+        "node-sass": "^4.8.3",
+        "postcss-loader": "^2.1.3",
+        "prop-types": "^15.6.1",
+        "react": "^16.3.1",
+        "react-dom": "^16.3.1",
+        "react-hot-loader": "^4.0.1",
+        "rimraf": "^2.6.2",
+        "semantic-ui-css": "^2.3.1",
+        "semantic-ui-react": "^0.79.1",
+        "solc": "^0.4.21",
+        "truffle-hdwallet-provider": "0.0.3",
+        "url-loader": "^1.0.1",
+        "web3": "^1.0.0-beta.33",
+        "webpack": "^4.2.0",
+        "webpack-cli": "^2.0.13",
+        "webpack-dev-server": "^3.1.1"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome": "^1.1.5",
+        "@fortawesome/react-fontawesome": "0.0.18",
+        "office-ui-fabric-react": "^5.80.0"
+    }
+}
